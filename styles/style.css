@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 -box-sizing: border-box; 
+}
+.ba-clearfix:before,
+.ba-clearfix:after {
+ content: '';
+ display: table;
+}
+.ba-clearfix:after{
+ clear: both;
+}
+.clearfix{
+ clear: both;
+ *zoom: 1;
+}
+.ba-container{	
+	width: 750px;
+	margin: 0 auto;
+}
+
+[class*='ba-col-'] div{
+	background-color: purple;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
